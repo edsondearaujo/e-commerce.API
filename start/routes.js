@@ -19,5 +19,5 @@ const Route = use('Route')
 //Route.on('/').render('Bem vindo!')
 
 Route.get('/', () => {
-  return { greeting: 'Teste docker' }
+  return { greeting: 'Voaaaaando alto com essa aplicação!' }
 })
