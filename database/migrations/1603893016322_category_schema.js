@@ -5,17 +5,21 @@ const Schema = use('Schema')
 
 class CategorySchema extends Schema {
   up () {
-    this.create('categories', table => {
+    this.create('categories', (table) => {
       table.increments()
+      
       table.string('title', 100)
       table.string('description', 255)
       table.integer('image_id').unsigned()
+      
       table.timestamps()
 
-      table.foreign('image_id')
-      .refences('id')
+      table
+      .foreign('image_id')
+      .references('id')
       .inTable('images')
-      .onDelete('cascate')
+      .onDelete('cascade')
+      
     })
   }
 

@@ -9,7 +9,7 @@ class ProductSchema extends Schema {
       
       table.increments()
       table.string('name', 200)
-      table.integer('iamge_id').unsigned()
+      table.integer('image_id').unsigned()
       table.text('descption')
       table.decimal('price', 12, 2)
       table.timestamps()
@@ -21,7 +21,7 @@ class ProductSchema extends Schema {
       .onDelete('cascade')
     })
 
-    this.create('image_product', table => {
+    this.create('image_product', (table) => {
      
       table.increments()
       table.integer('image_id').unsigned()
@@ -36,10 +36,10 @@ class ProductSchema extends Schema {
       table
       .foreign('product_id')
       .references('id')
-      .inTable('product')
+      .inTable('products')
       .onDelete('cascade')
     })
-    this.create('category_product', table => {
+    this.create('category_product', (table) => {
       
       table.increments()
       table.integer('product_id').unsigned()
@@ -48,7 +48,7 @@ class ProductSchema extends Schema {
       table
       .foreign('product_id')
       .references('id')
-      .inTable('product')
+      .inTable('products')
       .onDelete('cascade')
 
       table
