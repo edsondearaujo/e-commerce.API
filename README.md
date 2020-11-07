@@ -1,8 +1,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# E-commece Realtime
+# E-commerce Real-Time Data
 
-Esse projeto é uma API RESTfull de E-commerce com fluxo de dados em tempo real, usando Websocket, AdonisJs, NodeJs e MySQL.
+Esse projeto é uma API RESTfull de um sistema E-commerce com fluxo de dados em tempo real, usando Websocket, AdonisJs, NodeJs e MySQL.
 
 ##  Usar a aplicação na sua máquina
 
