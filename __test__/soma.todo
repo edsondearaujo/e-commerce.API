@@ -1,0 +1,7 @@
+# Regras de negócios para o teste inicial
+
+Regras:
+    - Deve conseguir realizar uma soma com os números de entradas.
+    - Se um dos números for igual a zero, a soma deve retornar zero.
+    - Caso o vetor de números de entradas tiver mais de cinco números, a soma deve ser multiplicada por dois.
+
